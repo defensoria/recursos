@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteFiltroCasoMecanismoDialogo" pageWidth="842" pageHeight="2035" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="792" leftMargin="25" rightMargin="25" topMargin="36" bottomMargin="36" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="9e79afe0-411f-4d18-b216-9b88f0226a6d">
+		<field name="columna" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\recursos\\reportes\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="tipoConflicto" class="java.lang.String"/>
+	<field name="total" class="java.lang.Integer"/>
+	<field name="porcentaje" class="java.lang.String"/>
+	<field name="negociacionDirecta" class="java.lang.Integer"/>
+	<field name="negociacionMediada" class="java.lang.Integer"/>
+	<field name="comisionAlto" class="java.lang.Integer"/>
+	<field name="reunionesPreparatorias" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="184" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
+				<imageExpression><![CDATA["C:\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="122" width="451" height="51" forecolor="#0033FF" uuid="3401e0dd-0f25-4e86-871a-049a0ac9000b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERÚ: CONFLICTOS SOCIALES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="77">
+			<rectangle>
+				<reportElement x="0" y="16" width="174" height="60" backcolor="#CCCCCC" uuid="419d00f1-1158-4e26-9f90-4bbf85eff8a8"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="174" y="16" width="618" height="20" backcolor="#CCCCCC" uuid="fb713824-8cbc-47a1-98cf-bbbfca20b514"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="388" y="17" width="135" height="20" uuid="65892512-46df-47c8-8940-6724b2350b25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mecanismo de dialogo]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="657" y="37" width="135" height="39" backcolor="#CCCCCC" uuid="f98b7f87-8339-403f-bae0-3a7e4bb3ad26"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="523" y="37" width="135" height="39" backcolor="#CCCCCC" uuid="d627f7b5-9b89-42ef-9ed8-79465739a0cf"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="388" y="37" width="135" height="39" backcolor="#CCCCCC" uuid="9785f003-0feb-4eca-a058-8b5fc6e300db"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="253" y="37" width="135" height="39" backcolor="#CCCCCC" uuid="4e3a2626-3f19-4f51-852a-ec1962b5b59c"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="214" y="37" width="38" height="39" backcolor="#CCCCCC" uuid="515ab653-c4e4-4bde-a0cd-9ee08ce39f15"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="174" y="37" width="40" height="39" backcolor="#CCCCCC" uuid="0a6b59c3-73ce-49d4-b944-726a292cc991"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="26" width="174" height="40" uuid="24835824-c028-4c21-bef6-c2bdf804d3e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Columna]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="40" width="38" height="35" uuid="364e419a-91da-4858-827e-0a18d919a703"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="36" width="35" height="39" uuid="e844cb41-48c0-40ed-ac1b-c05aa36275b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="657" y="38" width="135" height="39" uuid="ff6a809c-f6f5-4e1b-a67c-e4483ce03118"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reuniones preparatorias para el diálogo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="523" y="38" width="135" height="39" uuid="9989d453-c564-48a0-aa95-6b07762d3d2a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comisión de Alto Nivel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="38" width="135" height="39" uuid="fd65fac6-8aa1-4c22-84e1-2c364c3d2805"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mesa de diálogo: negociación mediada o asistida]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="252" y="36" width="135" height="39" uuid="e110a1ec-c75b-49fd-9f8f-d8e8d1981d88"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mesa de diálogo: negociación directa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<rectangle>
+				<reportElement x="0" y="0" width="174" height="20" backcolor="#CCCCCC" uuid="0576a73f-3eef-4c79-bf57-41cdd3ab3242"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="4" y="0" width="170" height="20" backcolor="#FF33CC" uuid="354c911b-d79a-437a-a7eb-6bd739e2fd37"/>
+				<textFieldExpression><![CDATA[$F{tipoConflicto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="0" width="40" height="20" uuid="94839775-5ef3-4882-a722-076492e640a9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="214" y="0" width="38" height="20" uuid="d65ab130-c9a9-4f4a-b389-5e9ae3463a37"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{porcentaje}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="0" width="134" height="20" uuid="53754a31-f4f5-49f7-bd2e-fd881083c86e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{negociacionDirecta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="0" width="135" height="20" uuid="5afcb38d-70fe-418a-8b63-6bdc89cc0bb3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{negociacionMediada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="523" y="0" width="134" height="20" uuid="3e377e91-8288-4760-ae6e-6ac4543ba9de"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{comisionAlto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="658" y="0" width="134" height="20" uuid="27a7d1dc-7f31-4298-9566-c735139312d6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{reunionesPreparatorias}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

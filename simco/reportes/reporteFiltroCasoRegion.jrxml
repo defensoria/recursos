@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteFiltroCasoRegion" pageWidth="1659" pageHeight="2035" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="1609" leftMargin="25" rightMargin="25" topMargin="36" bottomMargin="36" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="432"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="9e79afe0-411f-4d18-b216-9b88f0226a6d">
+		<field name="columna" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\recursos\\reportes\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="tipoConflicto" class="java.lang.String"/>
+	<field name="total" class="java.lang.Integer"/>
+	<field name="porcentaje" class="java.lang.String"/>
+	<field name="amazonas" class="java.lang.Integer"/>
+	<field name="ancash" class="java.lang.Integer"/>
+	<field name="apurimac" class="java.lang.Integer"/>
+	<field name="arequipa" class="java.lang.Integer"/>
+	<field name="ayacucho" class="java.lang.Integer"/>
+	<field name="cajamarca" class="java.lang.Integer"/>
+	<field name="cusco" class="java.lang.Integer"/>
+	<field name="huancavelica" class="java.lang.Integer"/>
+	<field name="huanuco" class="java.lang.Integer"/>
+	<field name="ica" class="java.lang.Integer"/>
+	<field name="junin" class="java.lang.Integer"/>
+	<field name="laLibertad" class="java.lang.Integer"/>
+	<field name="lambayeque" class="java.lang.Integer"/>
+	<field name="lima" class="java.lang.Integer"/>
+	<field name="loreto" class="java.lang.Integer"/>
+	<field name="madreDeDios" class="java.lang.Integer"/>
+	<field name="moquegua" class="java.lang.Integer"/>
+	<field name="pasco" class="java.lang.Integer"/>
+	<field name="piura" class="java.lang.Integer"/>
+	<field name="puno" class="java.lang.Integer"/>
+	<field name="sanMartin" class="java.lang.Integer"/>
+	<field name="tacna" class="java.lang.Integer"/>
+	<field name="tumbes" class="java.lang.Integer"/>
+	<field name="callao" class="java.lang.Integer"/>
+	<field name="ucayali" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="184" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
+				<imageExpression><![CDATA["C:\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="59" width="451" height="51" forecolor="#0033FF" uuid="3401e0dd-0f25-4e86-871a-049a0ac9000b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERÚ: CONFLICTOS SOCIALES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="77">
+			<rectangle>
+				<reportElement x="0" y="16" width="174" height="60" backcolor="#CCCCCC" uuid="419d00f1-1158-4e26-9f90-4bbf85eff8a8"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="174" y="16" width="1434" height="20" backcolor="#CCCCCC" uuid="fb713824-8cbc-47a1-98cf-bbbfca20b514"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="738" y="20" width="100" height="20" uuid="65892512-46df-47c8-8940-6724b2350b25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Regiones]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="790" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="c7172d85-b59d-4723-99a0-c155db544839"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="736" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="dbd51f82-eea1-4fa7-807d-dfa77e55523d"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="682" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="f98b7f87-8339-403f-bae0-3a7e4bb3ad26"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="628" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="d627f7b5-9b89-42ef-9ed8-79465739a0cf"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="517" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="9785f003-0feb-4eca-a058-8b5fc6e300db"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="406" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="4e3a2626-3f19-4f51-852a-ec1962b5b59c"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="352" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="4dd2c36f-05b3-457a-96ba-6cee3d7ab6b9"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="209" y="37" width="35" height="39" backcolor="#CCCCCC" uuid="515ab653-c4e4-4bde-a0cd-9ee08ce39f15"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="174" y="37" width="35" height="39" backcolor="#CCCCCC" uuid="0a6b59c3-73ce-49d4-b944-726a292cc991"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="176" y="38" width="35" height="39" uuid="e844cb41-48c0-40ed-ac1b-c05aa36275b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="26" width="174" height="40" uuid="24835824-c028-4c21-bef6-c2bdf804d3e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Conflicto]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="298" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="4bd6d323-f9f0-4715-b4b9-276ae5fbbd8f"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="244" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="76392fce-f806-4cc0-ae0b-f76360fe8f06"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="209" y="40" width="32" height="35" uuid="364e419a-91da-4858-827e-0a18d919a703"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="844" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="bdf3c10a-84d1-413f-bcf9-271410a5e0de"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="898" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="bede6892-e017-4720-8836-a9ca5978b3f7"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="952" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="698f3c24-8aab-4eed-a1fd-4421dbf2e4a7"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1007" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="6af08e57-9614-42ab-82fa-ec85f996e6ef"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1062" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="13b06bed-5d93-4d55-bf05-23a83ee09930"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1117" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="031784c2-c76a-4b06-983d-35c82a6a49a6"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1172" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="ee86d0db-b6da-4871-b1d5-17f159c3f221"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1226" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="88ddbeeb-4103-4209-98cb-17b4229f327d"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1280" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="966b47ed-da0f-4700-96e0-16bb78535900"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1334" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="7179b33f-8067-44ee-a922-ceab335ff75d"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1390" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="73ff7c7d-d234-4bb2-ae31-8b9f561f615b"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1444" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="6a25a9f6-c5c2-480b-b0a9-bd4cb94787c5"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1498" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="c69b12b7-997b-4d87-8244-a789dc747102"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1553" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="56c3763f-a393-404a-80e7-9efdc874402f"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="243" y="38" width="55" height="37" uuid="c7ad91dd-c624-4938-a1fd-4d0258412dce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amazonas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="38" width="55" height="39" uuid="e110a1ec-c75b-49fd-9f8f-d8e8d1981d88"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ancash]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="36" width="55" height="39" uuid="fd65fac6-8aa1-4c22-84e1-2c364c3d2805"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apurimac]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="39" width="55" height="35" uuid="9989d453-c564-48a0-aa95-6b07762d3d2a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Arequipa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="517" y="39" width="55" height="38" uuid="16fc9e97-2749-4d49-b0fc-f56602765480"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cajamarca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="629" y="40" width="55" height="37" uuid="ff6a809c-f6f5-4e1b-a67c-e4483ce03118"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Huancavelica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="683" y="39" width="55" height="37" uuid="60accd4e-9844-4d0f-bdb1-fa277193c046"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Huanuco]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="736" y="39" width="55" height="38" uuid="d233a00f-30ac-46dc-b11c-f4a939bd5ae8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="790" y="39" width="55" height="38" uuid="542764f2-38a2-4372-926c-97a9363cd412"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Junin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="844" y="39" width="55" height="38" uuid="b469eeef-28cd-40bf-8f0c-ae26bad563a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[La Libertad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="897" y="39" width="55" height="38" uuid="bfe93aa4-8f55-4686-8c9e-ef1bd8bc136e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lambayeque]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="952" y="39" width="55" height="38" uuid="bbc005be-bc0f-4ab4-b571-f4736c3e303c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1007" y="39" width="55" height="38" uuid="5dfe63b4-9634-4676-bd38-a7f0d6a76043"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Loreto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1062" y="37" width="55" height="38" uuid="4b0a5fbf-fb6c-45fc-b33f-485c1bf68db9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Madre de Dios]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1117" y="39" width="55" height="38" uuid="16a5580f-d2d0-4835-8379-707dd92cbb48"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Moquegua]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1172" y="38" width="55" height="38" uuid="81d8addb-99f8-478a-ac2f-4846a929d777"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pasco]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1227" y="38" width="55" height="38" uuid="57147b0a-e93c-48c8-80d2-dcc02849aacd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Piura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1279" y="38" width="55" height="38" uuid="fbf477e6-d330-4a4a-9510-345e5d6fbf91"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Puno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1334" y="39" width="55" height="38" uuid="85717fb4-940d-4509-bb55-cc9916c52d9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[San Martin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1390" y="39" width="55" height="38" uuid="cbb094de-2d32-4555-84cf-e05abefd0e4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tacna]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1445" y="39" width="55" height="38" uuid="b36c19ea-610e-4b05-8315-9615c0db1721"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tumbes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1500" y="39" width="55" height="38" uuid="e5c1d1de-31eb-4040-8b47-7945d640860e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Callao]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1553" y="39" width="55" height="38" uuid="236ef906-6561-4461-b5ea-3a9d8dabccce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ucayali]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="461" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="66f9b4be-b493-4f81-b669-affa659de7b2"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="461" y="39" width="55" height="35" uuid="2fb8d4f3-3eb3-4523-a9de-15c4c0524743"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ayacucho]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="572" y="37" width="55" height="39" backcolor="#CCCCCC" uuid="24e67721-586b-4f64-b3ca-6b2c16763056"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="572" y="39" width="55" height="38" uuid="8aa980ca-bd2d-441c-8a1a-e81012ec0b15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cusco]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="174" y="0" width="37" height="20" uuid="69ed7067-66d0-48db-b52c-8147c097ceab"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="211" y="0" width="33" height="20" uuid="ad75bf69-bf8d-4a68-960f-43a31625d288"/>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{porcentaje}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="0" width="174" height="20" backcolor="#CCCCCC" uuid="0576a73f-3eef-4c79-bf57-41cdd3ab3242"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="4" y="0" width="172" height="20" backcolor="#FF33CC" uuid="354c911b-d79a-437a-a7eb-6bd739e2fd37"/>
+				<textFieldExpression><![CDATA[$F{tipoConflicto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="0" width="55" height="20" uuid="a85eea3e-073f-478a-b235-58c7cd8e1a72"/>
+				<textFieldExpression><![CDATA[$F{amazonas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="0" width="54" height="20" uuid="2a5c19e3-e866-4c06-b0c3-3b5243d66add"/>
+				<textFieldExpression><![CDATA[$F{ancash}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="354" y="0" width="53" height="20" uuid="23a7f551-b90a-4d9a-9a9b-7cb7c40f9026"/>
+				<textFieldExpression><![CDATA[$F{apurimac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="0" width="54" height="20" uuid="f041be3d-ea6f-4658-9a98-4f76ed6224dc"/>
+				<textFieldExpression><![CDATA[$F{arequipa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="0" width="55" height="20" uuid="5adeea01-e112-49a0-a36a-df021b2952be"/>
+				<textFieldExpression><![CDATA[$F{ayacucho}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="517" y="0" width="56" height="20" uuid="f459aadf-ccb1-49ad-bddb-cb010ab3d20a"/>
+				<textFieldExpression><![CDATA[$F{cajamarca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="572" y="0" width="57" height="20" uuid="bf04e670-4d20-4983-9a47-e1198b0a46ae"/>
+				<textFieldExpression><![CDATA[$F{cusco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="627" y="0" width="55" height="20" uuid="94316a2d-d00c-4f15-86c1-ec6c42525f86"/>
+				<textFieldExpression><![CDATA[$F{huancavelica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="682" y="0" width="56" height="20" uuid="c16b09bd-9e2c-415e-8fed-4a51d8fabd5e"/>
+				<textFieldExpression><![CDATA[$F{huanuco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="736" y="0" width="55" height="20" uuid="465847f5-7e67-4c58-bc46-de1cdd8cda75"/>
+				<textFieldExpression><![CDATA[$F{ica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="789" y="0" width="55" height="20" uuid="02259255-38a5-4dc2-9195-1f8c1dbd7b73"/>
+				<textFieldExpression><![CDATA[$F{junin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="845" y="0" width="53" height="20" uuid="62d41720-041a-4a97-8708-08e9f1d75248"/>
+				<textFieldExpression><![CDATA[$F{laLibertad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="899" y="0" width="53" height="20" uuid="15f8f764-78d5-4e9b-95cf-c634f4ed9ac6"/>
+				<textFieldExpression><![CDATA[$F{lambayeque}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="952" y="0" width="55" height="20" uuid="295f69c2-3ddf-4ee8-a2a2-5aa7bef8bf4d"/>
+				<textFieldExpression><![CDATA[$F{lima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1007" y="0" width="55" height="20" uuid="5acd015c-4f46-4f92-90fd-68f66b82ac6e"/>
+				<textFieldExpression><![CDATA[$F{loreto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1062" y="0" width="55" height="20" uuid="4a3a44f2-cd9b-4d44-b696-388f3a68607b"/>
+				<textFieldExpression><![CDATA[$F{madreDeDios}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1117" y="0" width="55" height="20" uuid="901a9b3b-5e57-4e8f-86d0-765cc585e4d7"/>
+				<textFieldExpression><![CDATA[$F{moquegua}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1172" y="0" width="55" height="20" uuid="42020ab6-e2b8-47da-975b-29c20eae0c9c"/>
+				<textFieldExpression><![CDATA[$F{pasco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1227" y="0" width="53" height="20" uuid="860d9cd3-0842-4adb-b7cd-7da10e67e3e0"/>
+				<textFieldExpression><![CDATA[$F{piura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1282" y="0" width="52" height="20" uuid="64f850fc-6e4f-49b4-b61e-b046dca44e04"/>
+				<textFieldExpression><![CDATA[$F{puno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1334" y="0" width="57" height="20" uuid="6845ff53-5a76-4270-ba3f-0e790b496864"/>
+				<textFieldExpression><![CDATA[$F{sanMartin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1390" y="0" width="55" height="20" uuid="d25b7924-5682-4cce-8521-62c00f316f9c"/>
+				<textFieldExpression><![CDATA[$F{tacna}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1445" y="0" width="53" height="20" uuid="e03a7ddc-edb5-4881-a2ca-512e55c04811"/>
+				<textFieldExpression><![CDATA[$F{tumbes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1499" y="0" width="54" height="20" uuid="fb9e0fb1-cac5-48d9-86c5-82c023a37f98"/>
+				<textFieldExpression><![CDATA[$F{callao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1553" y="0" width="55" height="20" uuid="58c2964a-3276-4179-a6a6-6e0b67562888"/>
+				<textFieldExpression><![CDATA[$F{ucayali}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

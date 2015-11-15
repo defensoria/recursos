@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="planIntervencion" pageWidth="595" pageHeight="842" columnWidth="451" leftMargin="72" rightMargin="72" topMargin="36" bottomMargin="36" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\proyect\\fuentes20141002\\proyecto\\recursos\\reportes\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="acciones" class="java.util.List"/>
+	<field name="etapas" class="java.util.List"/>
+	<field name="accionesSeleccionadas" class="java.util.List"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="174" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
+				<imageExpression><![CDATA["C:\\proyect\\fuentes20141002\\proyecto\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="83" width="451" height="27" forecolor="#0033FF" uuid="49ef1176-77b7-445f-acf8-c8b87c301bcd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Corbel" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLAN DE INTERVENCION]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="126" width="451" height="33" uuid="b24fd3cb-7ccd-4a4c-b11c-6cbe006e4a6b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Corbel" size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="21" width="451" height="35" uuid="4a527e8c-2a7e-4826-ba69-283ca552bc83"/>
+				<textElement>
+					<font fontName="Corbel" size="18"/>
+				</textElement>
+				<text><![CDATA[1. Descripción y justificación de la intervención]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement isPrintRepeatedValues="false" x="25" y="56" width="426" height="34" uuid="7b51c60d-2811-45d3-86b7-a93a192b629e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Corbel"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="105">
+			<subreport>
+				<reportElement positionType="Float" x="0" y="63" width="451" height="42" uuid="e2503d10-7be3-425c-9272-a394ede94e6c"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{acciones})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "planIntervencionAcciones.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement x="0" y="24" width="451" height="35" uuid="ab2610eb-11f0-4aa3-a925-530c669e5eed"/>
+				<textElement>
+					<font fontName="Corbel" size="18"/>
+				</textElement>
+				<text><![CDATA[2. Lineamientos de estrategia (campos de acción)]]></text>
+			</staticText>
+		</band>
+		<band height="285">
+			<subreport>
+				<reportElement x="0" y="56" width="451" height="42" uuid="ea281d4c-1647-453c-abd9-623a459beed6"/>
+				<subreportParameter name="SUBREPORT_DIR"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{accionesSeleccionadas})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "planIntervencionEtapaAccion.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement x="0" y="20" width="451" height="36" uuid="df000ea6-b22c-45ab-9e68-11f80647dee6"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Corbel" size="18"/>
+				</textElement>
+				<text><![CDATA[3. Detalles del Plan]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

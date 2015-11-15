@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteCaso004" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="770" leftMargin="36" rightMargin="36" topMargin="36" bottomMargin="36" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="9e79afe0-411f-4d18-b216-9b88f0226a6d">
+		<field name="columna" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\recursos\\reportes\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="columna" class="java.lang.String"/>
+	<field name="total" class="java.lang.Integer"/>
+	<field name="socioambiental" class="java.lang.Integer"/>
+	<field name="asuntosGobiernoLocal" class="java.lang.Integer"/>
+	<field name="laboral" class="java.lang.Integer"/>
+	<field name="comunal" class="java.lang.Integer"/>
+	<field name="asuntosGobiernoNacional" class="java.lang.Integer"/>
+	<field name="asuntosGobiernoRegional" class="java.lang.Integer"/>
+	<field name="demarcacionTerritorial" class="java.lang.Integer"/>
+	<field name="electoral" class="java.lang.Integer"/>
+	<field name="otrosAsuntos" class="java.lang.Integer"/>
+	<field name="cultivoCoca" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="165" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
+				<imageExpression><![CDATA["C:\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="122" width="770" height="36" forecolor="#0033FF" uuid="3401e0dd-0f25-4e86-871a-049a0ac9000b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERÚ: CONFLICTOS SOCIALES, SEGÚN AÑO, POR ESTADO, 2004-15 (Cantidad de casos)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="88">
+			<rectangle>
+				<reportElement x="0" y="16" width="56" height="70" backcolor="#CCCCCC" uuid="419d00f1-1158-4e26-9f90-4bbf85eff8a8"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="57" y="36" width="61" height="50" backcolor="#CCCCCC" uuid="ee87ec2e-ae71-452a-a3ad-a0a1328918ee"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="118" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="b32a7311-70f1-47ed-a0e4-1ea9a2bb94af"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="183" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="278be488-4db2-432b-81ed-0df2d658c56d"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="57" y="16" width="713" height="20" backcolor="#CCCCCC" uuid="fb713824-8cbc-47a1-98cf-bbbfca20b514"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="235" y="16" width="55" height="20" uuid="65892512-46df-47c8-8940-6724b2350b25"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="28" width="55" height="20" forecolor="#333333" uuid="b9d4f71b-c42b-4439-8dbe-062b518f16b8"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Año]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="248" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="4baea0f5-0591-4563-b4e1-23bb5d1b97cb"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="56" y="35" width="62" height="51" uuid="f6bd9974-50de-421a-84c5-0c12903b8120"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="35" width="65" height="51" uuid="fbac2abb-c957-4a6f-b356-af2ee6bff8b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Socio Ambiental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="36" width="65" height="52" uuid="693affb2-0258-4172-a241-a1ef3a6ce7f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Asuntos Gobierno Local]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="37" width="65" height="49" uuid="692ecef2-16e3-419a-9e46-22ab90baf4f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laboral]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="313" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="1484def6-2695-4538-8648-08777a36eba3"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="29f67e92-89b3-4375-841e-993d20c79b59"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="443" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="8c96b649-e811-4094-867e-d86b4c72b4e3"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="378" y="37" width="65" height="49" forecolor="#000000" backcolor="#FFFFFF" uuid="5ac865cc-0227-41f6-895c-91b9a21d8903"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Asuntos Gobierno Navional]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="508" y="36" width="66" height="50" backcolor="#CCCCCC" uuid="bc1cda0d-5650-4fb7-b105-4fa580b00988"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="574" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="78bf245f-f0a9-47f8-9bb0-f64d918fb648"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="640" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="917263f8-e9de-49c2-8046-353efd96bdb0"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="705" y="36" width="65" height="50" backcolor="#CCCCCC" uuid="bfc4444e-1414-4488-9810-b5571358a172"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="313" y="37" width="65" height="49" uuid="dd38cb46-67f8-4b70-8366-4f4ad1381497"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comunal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="443" y="37" width="65" height="49" forecolor="#000000" backcolor="#FFFFFF" uuid="95bd7ef6-9147-4cbe-b820-df5a0a367f5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Asuntos Gobierno Regional]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="508" y="37" width="66" height="49" forecolor="#000000" backcolor="#FFFFFF" uuid="51320bc3-609f-4b10-8289-836d9e60fb9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Demarcacion Territorial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="573" y="36" width="66" height="49" forecolor="#000000" backcolor="#FFFFFF" uuid="353a9385-89c4-427a-a69b-4f779bfc45e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Electoral]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="639" y="37" width="66" height="49" forecolor="#000000" backcolor="#FFFFFF" uuid="25fe95ad-d0e0-47d4-b8fc-29ef025fbd8a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Cultivo Ilegal de Hoja de Coca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="705" y="37" width="66" height="49" forecolor="#000000" backcolor="#FFFFFF" uuid="0e4a7e22-e700-43ff-8cb8-7343f477381f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Otros Asuntos]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21">
+			<rectangle>
+				<reportElement x="0" y="1" width="57" height="19" backcolor="#CCCCCC" uuid="e9405279-3932-447e-8614-92e149216a81"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement mode="Transparent" x="0" y="0" width="57" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="a688f730-537f-477d-ab07-3fde9c7b0122"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="SansSerif" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{columna}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="57" y="1" width="61" height="19" uuid="039d884d-c4b4-4eaa-9fa5-aa7a47fd26cf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="1" width="65" height="19" uuid="489e098f-e921-45c5-bf31-cb8d34bee113"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{socioambiental}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="0" width="65" height="20" uuid="7e8c8e69-75c5-4c97-8170-35a4b1b9cdb8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{asuntosGobiernoLocal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="1" width="65" height="19" uuid="33e52882-02ad-4ff3-8485-02492ad5e159"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{laboral}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="313" y="1" width="65" height="20" uuid="0332ba0f-49f3-4ae5-a721-05e3cf0c8daf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{comunal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="0" width="65" height="20" uuid="707ab6f9-0bd1-4a2f-b0be-069b3f2aa936"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{asuntosGobiernoNacional}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="1" width="65" height="20" uuid="26a4d62c-b369-40c6-85ca-2bb3a24c1252"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{asuntosGobiernoRegional}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="0" width="65" height="20" uuid="85217699-a3dc-4a83-9c2b-38b00827318e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{demarcacionTerritorial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="574" y="1" width="66" height="20" uuid="1334b98b-c2d3-49e2-9fd9-10c9f1b018f6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{electoral}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="1" width="65" height="20" uuid="88deb058-b24d-4f5b-88ea-e24420d6132f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{cultivoCoca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="705" y="0" width="65" height="20" uuid="c1c9e8c4-4a67-45ea-993e-f331c82420fd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{otrosAsuntos}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

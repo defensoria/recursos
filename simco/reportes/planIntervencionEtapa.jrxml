@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="planIntervencionEtapa" pageWidth="451" pageHeight="842" columnWidth="451" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\proyect\\fuentes20141002\\proyecto\\recursos\\reportes\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="detalle" class="java.lang.String"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="intervencionAccionNombre" class="java.lang.String"/>
+	<field name="fechaLimiteString" class="java.lang.String"/>
+	<field name="ieas" class="java.util.List"/>
+	<field name="avanceString" class="java.lang.String"/>
+	<field name="ims" class="java.util.List"/>
+	<detail>
+		<band height="97" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="26" y="0" width="425" height="20" uuid="09766d15-7f4a-4442-893d-33792de45ae6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detalle}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="116" y="71" width="335" height="20" uuid="c092df94-7f75-4b23-86cb-5a77e74e1128"/>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="32" width="335" height="20" uuid="035cc124-a5ee-4059-870a-b5721bca4074"/>
+				<textFieldExpression><![CDATA[$F{intervencionAccionNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="52" width="335" height="20" uuid="5ea1fbe3-abf5-48d6-825d-ae78f77e4733"/>
+				<textFieldExpression><![CDATA[$F{fechaLimiteString}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="26" height="20" uuid="943a83d9-ae0b-4c46-9760-604b7ccd4c16"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[3.1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="32" width="90" height="20" uuid="345e64cb-cc8e-476c-a219-2b3145b3c4be"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Campo de Accion:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="51" width="90" height="20" uuid="3bcff457-feb3-4ba3-a821-fddc7e62250e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha limite:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="71" width="90" height="20" uuid="af171df7-e037-4dc1-890e-47d38822c98d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripcion:]]></text>
+			</staticText>
+		</band>
+		<band height="72">
+			<subreport>
+				<reportElement x="0" y="22" width="451" height="44" uuid="1e11389a-feb3-44bf-8c4b-53466e08ac98"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{ieas})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "planIntervencionEtapaActuacion.jasper"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="26" y="2" width="425" height="20" uuid="81947610-bcff-4c83-92e7-dcf52de4a1c0"/>
+				<textFieldExpression><![CDATA[$F{avanceString}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="73">
+			<subreport>
+				<reportElement x="0" y="20" width="451" height="45" uuid="e11c5755-7ed2-4b7f-9945-c9d043bfd4b3"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{ims})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "planIntervencionEtapaMiembro.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement x="26" y="0" width="182" height="20" uuid="2cd83b40-833a-4e3d-afd6-b6e2ae79a09e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comisionados responsables]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
