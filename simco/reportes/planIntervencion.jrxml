@@ -2,9 +2,9 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="planIntervencion" pageWidth="595" pageHeight="842" columnWidth="451" leftMargin="72" rightMargin="72" topMargin="36" bottomMargin="36" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="82"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["C:\\proyect\\fuentes20141002\\proyecto\\recursos\\reportes\\"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["C:\\u01\\simco\\reportes\\"]]></defaultValueExpression>
 	</parameter>
 	<queryString language="SQL">
 		<![CDATA[]]>
@@ -21,7 +21,7 @@
 		<band height="174" splitType="Stretch">
 			<image>
 				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
-				<imageExpression><![CDATA["C:\\proyect\\fuentes20141002\\proyecto\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
+				<imageExpression><![CDATA["C:\\u01\\simco\\images\\logoPlanIntervencion.png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="0" y="83" width="451" height="27" forecolor="#0033FF" uuid="49ef1176-77b7-445f-acf8-c8b87c301bcd"/>
@@ -70,7 +70,7 @@
 				<text><![CDATA[2. Lineamientos de estrategia (campos de acción)]]></text>
 			</staticText>
 		</band>
-		<band height="285">
+		<band height="127">
 			<subreport>
 				<reportElement x="0" y="56" width="451" height="42" uuid="ea281d4c-1647-453c-abd9-623a459beed6"/>
 				<subreportParameter name="SUBREPORT_DIR"/>
@@ -86,4 +86,17 @@
 			</staticText>
 		</band>
 	</detail>
+	<pageFooter>
+		<band height="50">
+			<textField>
+				<reportElement x="330" y="30" width="80" height="20" uuid="8c8ac525-cec4-4438-a103-71015fe0f476"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="410" y="30" width="40" height="20" uuid="325fec95-b407-46a6-aaba-59da811559e5"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
 </jasperReport>
