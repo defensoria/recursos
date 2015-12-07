@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="documentoCaso" pageWidth="595" pageHeight="842" columnWidth="451" leftMargin="72" rightMargin="72" topMargin="36" bottomMargin="36" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="405"/>
+	<property name="ireport.y" value="0"/>
 	<subDataset name="Table Dataset 1" uuid="6b7f3416-6a84-4474-9cd4-631f95d8e172"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["C:\\recursos\\reportes\\"]]></defaultValueExpression>
@@ -30,6 +30,7 @@
 	<field name="actuacionesDefensoriales" class="java.util.List"/>
 	<field name="acontecimientos" class="java.util.List"/>
 	<field name="listaCasoRegiones" class="java.util.List"/>
+	<field name="imagePath" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -37,7 +38,7 @@
 		<band height="110" splitType="Stretch">
 			<image>
 				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
-				<imageExpression><![CDATA["C:\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
+				<imageExpression><![CDATA[$F{imagePath}]]></imageExpression>
 			</image>
 			<textField isStretchWithOverflow="true">
 				<reportElement isPrintRepeatedValues="false" x="83" y="79" width="368" height="27" uuid="033cd80b-ecf0-4248-b9de-585abad2a0d9"/>

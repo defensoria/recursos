@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteFiltroCasoRegion" pageWidth="1659" pageHeight="2035" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="1609" leftMargin="25" rightMargin="25" topMargin="36" bottomMargin="36" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="432"/>
+	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<style name="table">
 		<box>
@@ -125,10 +125,6 @@
 	</background>
 	<title>
 		<band height="184" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
-				<imageExpression><![CDATA["C:\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="0" y="59" width="451" height="51" forecolor="#0033FF" uuid="3401e0dd-0f25-4e86-871a-049a0ac9000b"/>
 				<textElement verticalAlignment="Middle">

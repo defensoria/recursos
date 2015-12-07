@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportePublicResumenEjecutivo" columnDirection="RTL" pageWidth="595" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="523" leftMargin="72" rightMargin="0" topMargin="36" bottomMargin="36" isFloatColumnFooter="true" uuid="e8e17cc8-2bb2-4615-af5f-f83f4d9817ad">
 	<property name="ireport.zoom" value="0.9090909090909108"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="8534"/>
+	<property name="ireport.y" value="288"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -228,6 +228,8 @@
 	<field name="procedoDialogoTexto2" class="java.lang.String"/>
 	<field name="hechoViolenciaTexto1" class="java.lang.String"/>
 	<field name="accionesProtestaTexto1" class="java.lang.String"/>
+	<field name="imagePath001" class="java.lang.String"/>
+	<field name="imagePath002" class="java.lang.String"/>
 	<variable name="variable1" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
@@ -236,11 +238,11 @@
 		<band height="770" splitType="Stretch">
 			<image scaleImage="FillFrame">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="-72" y="-36" width="595" height="483" uuid="57dc9dbd-dfe7-440d-8da4-18ac44a9b546"/>
-				<imageExpression><![CDATA["http://simco2.no-ip.biz/filesystem/reportes/portada01.png"]]></imageExpression>
+				<imageExpression><![CDATA[$F{imagePath001}]]></imageExpression>
 			</image>
 			<image scaleImage="FillFrame">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="-72" y="580" width="595" height="190" uuid="d25078a0-de71-49e3-b0d2-9d31eb6b8ac6"/>
-				<imageExpression><![CDATA["http://simco2.no-ip.biz/filesystem/reportes/portada02.png"]]></imageExpression>
+				<imageExpression><![CDATA[$F{imagePath002}]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="-72" y="447" width="595" height="28" forecolor="#FFFFFF" uuid="0faef444-b71c-44d1-a341-586e0f3ccd03"/>

@@ -106,10 +106,6 @@
 	</background>
 	<title>
 		<band height="184" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="0" width="235" height="59" uuid="cdd0478e-af9c-4f5b-ac48-e942fbfcc84d"/>
-				<imageExpression><![CDATA["C:\\recursos\\images\\logoPlanIntervencion.png"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="0" y="122" width="451" height="51" forecolor="#0033FF" uuid="3401e0dd-0f25-4e86-871a-049a0ac9000b"/>
 				<textElement verticalAlignment="Middle">
